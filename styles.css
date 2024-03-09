@@ -364,8 +364,8 @@ header .left-section{
 }
 
 @media (max-width:700px){
-    .featured{
-      
+    body{
+      font-size:14px;
     }
     .highlight-tab{
         flex-direction: column;
