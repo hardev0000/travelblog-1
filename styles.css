@@ -5,6 +5,7 @@
 
 :root{
     --padding-l-r:0 1.5rem;
+    --small-card-padding: 1rem 1.5rem;
 }
 
 
@@ -19,7 +20,7 @@ header{
     height:100vh;
     width:100vw;
     max-width: 100%;
-    background-image: url(./pexels-francesco-ungaro-2325447.jpg);
+    background-image: url(pexels-francesco-ungaro-2325447.jpg);
     background-size:cover;
     background-position: center;
     display: flex;
@@ -180,7 +181,7 @@ header .left-section{
 }
 
 .section-cards .card .color-theme{
-    color:#F4A075;
+    color:rgb(244, 160, 117);
 }
 
 .section-cards .card a{
@@ -258,6 +259,8 @@ header .left-section{
 
 .highlight-tab .wrap{
     display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
 }
 .main .highlight-tab div.small-card{
     display: flex;
@@ -290,9 +293,19 @@ header .left-section{
    width: 200px;
 }
 .featured div.f-c-1{
-   flex-grow: 1;
-    
+   flex-grow: 4;
+   background-image: url(buddha\ updated.jpg);
+   background-size: cover;
+   background-position: 50% 100%;
+   max-width: 100%;
+   flex-basis: 300px;
+   transition: all 1s 0 ease-in;
 }
+
+.featured div.f-c-1:hover{
+    background-size: 110%;
+}
+
 
 .featured .f-c-1 img{
     height:271px;
@@ -383,4 +396,317 @@ header .left-section{
         object-position: center;
         
     }
+}
+
+
+div.experiment{
+    background-image: url(wind.jpg);
+    background-position: center;
+    background-size: cover;
+    min-width: 200px;
+    flex-shrink: 0;
+    flex-grow: 1;
+
+}
+
+div.experiment:hover{
+    background-size: 110%;
+}
+
+div.experiment2{
+    background-image:url(drone.jpg);
+    background-size:cover;
+    min-width: 200px;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+div.experiment2:hover{
+    background-size: 110%;
+}
+
+
+
+.edditor-choice{
+    display: flex;
+    justify-content: space-between;
+    gap:var(--padding-l-r);
+    padding: var(--padding-l-r);
+}
+
+
+@media (max-width:700px){
+    .edditor-choice{
+        flex-direction: column;
+    }
+}
+.left-side-edditor{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first-e-ch-crd{
+    width: 100%;
+ 
+}
+
+.crd-img{
+    width: 100%;
+    height: 300px;
+    background-image: url(buddha.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all 0.2s linear;
+}
+
+.crd-img:hover{
+    background-size: 110%;
+}
+
+.img-title{
+    color:#F4A075;
+    margin: .5rem 0;
+}
+
+.img-caption{
+    font-weight:300;
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+
+.img-sub-caption{
+    color:#BBBEC1;
+    margin:0.5rem 0;
+}
+
+
+.img-credit{
+    color:#838485;
+    font-weight: 200;
+}
+
+.short-news{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    margin-top:10px;
+    border-top:1px solid #ccc;
+}
+
+.crd-s{
+    padding: .4rem;
+}
+
+.feature-posts-title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+.f-p-c{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin:10px 0;
+   
+}
+
+.f-p-c-img{
+    width:200px;
+    aspect-ratio: 2/1;
+    margin-right:10px;
+    object-fit: cover;
+}
+
+.f-p-c-info{
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+.form{
+   
+    background-color: #e3edee;
+    padding: var(--small-card-padding);
+    position: relative;
+}
+
+.form::before{
+    content: '';
+    position: absolute;
+    border:1.2rem solid transparent;
+    border-right-color:white;
+    border-top-color:white;
+    border-bottom-color:#9BC4CA;
+    border-left-color:#9BC4CA;
+    transform: rotate(deg);
+    right:0;
+    top:0;
+    
+  
+
+}
+
+.form-title{
+    padding: .7rem 0;
+    font-size:1.6rem;
+}
+
+input{
+    width: 100%;
+    height:2.3rem;
+    margin: 6px 0;
+    border:none;
+    font-size: inherit;
+    font-family: inherit;
+    padding: .4em .6em;
+}
+
+input:focus,
+input:hover{
+    outline: 4px solid #9BC4CA;
+}
+
+.form-btn{
+    width:100%;
+    margin: 6px 0;
+    background-color:#9BC4CA;
+    color:white;
+    height:2.3rem;
+    padding: .4em .6em;
+    border:none;
+    text-transform:uppercase;
+}
+
+.form-btn:is(:hover){
+    background-color: #607a7e;
+}
+
+.about{
+    padding: var(--small-card-padding);
+}
+
+.main-title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.ab-title{
+    margin-bottom: 10px;
+}
+.soci-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding: .4rem 0;
+}
+
+.soci-icon img{
+    width:25px;
+}
+
+
+.most-p{
+    padding: var(--small-card-padding);
+}
+
+.most-p-title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.most-p ol{
+    margin:0;
+    padding:0;
+    list-style:decimal;
+}
+
+.most-p-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:8px;
+    padding: .4rem 0;
+    margin-bottom: 10px;
+}
+
+.most-p-img{
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+}
+
+
+.trending{
+    padding:var(--small-card-padding);
+}
+.trending-title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.trending ul{
+    margin:0;
+    padding:0;
+}
+
+.trending ul li{
+    list-style:none;
+    color:#F4A075;
+    margin-bottom: 5px;
+}
+
+
+
+
+footer{
+    padding: var(--padding-l-r);
+    background-color: #e3edee;
+    margin-top: 2rem;
+}
+
+
+footer .footer-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+   
+   
+}
+
+.footer-menu .company-about img{
+    width:50px;
+}
+
+.footer-menu .company-about{
+    max-width: 250px;
+}
+
+.company-about div::first-line{
+    font-weight: 600;
+}
+
+.footer-menu .title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+.footer-menu ul{
+    padding: 0;
+    margin:0;
+}
+
+.footer-menu ul li{
+    list-style: none;
+}
+
+.footer-menu .f-c{
+    margin: 0 10px;
 }
