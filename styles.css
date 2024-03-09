@@ -677,7 +677,17 @@ footer .footer-menu{
     justify-content: space-between;
     padding: 2rem 0;
    
-   
+}
+
+@media(max-width:700px){
+    footer .footer-menu{
+        flex-direction: column;
+        
+    }
+
+    .footer-menu div.f-c{
+        margin:10px 0;
+    }
 }
 
 .footer-menu .company-about img{
