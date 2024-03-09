@@ -439,6 +439,11 @@ div.experiment2:hover{
     .edditor-choice{
         flex-direction: column;
     }
+
+     .f-p-c-img{
+        width:170px;
+       
+    }
 }
 .left-side-edditor{
     flex-grow: 1;
